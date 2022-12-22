@@ -2,7 +2,7 @@ var checkedIds = [];
 
 $('input[type="checkbox"]').change(function() {
   if ($(this).is(':checked')) {
-    checkedIds.push($(this).data('id')); //accessing dataset property id
+    checkedIds.push($(this).data('id')); //accessin dataset property id
     $('div .amenities h4').html($(this).data('name'));
   } else {
     var index = checkedIds.indexOf($(this).data('id'));
